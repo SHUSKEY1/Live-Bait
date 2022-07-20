@@ -14,6 +14,31 @@ ul{
 h1{
   text-align: center;
 }
+p{
+  text-align: center;
+  display: block;
+  float: right;
+  font-size: 20px;
+}
+.column1 p{
+  float: right;
+  width: 500px;
+  margin-left: 5px;
+  background: rgb(224,255,255);
+}
+
+.Services p{
+  float: right;
+  width: 500px;
+  margin-left: 5px;
+  background: rgb(224,255,255);
+}
+
+img{
+  width: 45%;
+  padding: 15px;
+  margin-left: 22px;
+}
 .main-nav a{
   text-decoration: none;
   background: rgb(70,130,180);
@@ -30,20 +55,46 @@ h1{
   color: black;
 }
 
-.List1{
-  background-image: url(lures.jpg);
-  background-size: cover;
+.colum1, .colum2{
+ background: rgb(224,255,255);
 }
 
 /* Navigation Styles */
 .List1 ul{
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 5px;
+  padding: 20px;
   width: 200px;
 }
 
 .List1 li{
   text-align: center;
   float: inherit;
+}
+
+.clearfix:after {content: ""; display: table;clear: both;}
+@media screen and (min-width:647px) {
+  .colum1, .colum2{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .colum1{
+    padding-bottom: 50px;
+  }
+  .colum2{
+    padding-bottom: 90px;
+  }
+  .colum3{
+    width: 100%;
+  }
+  .column1{
+    text-align: center;
+    width: 100%;
+  }
+
+  footer{
+    text-align: center;
+  }
 }
